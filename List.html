@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volleyball Team Organizer</title>
+  <link rel="stylesheet" href="List.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/D.png" alt="Volleyball Logo"> Volleyball
+        </a>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="List.html">List</a></li>
+            <li><a href="Shuffle.html">Teams</a></li>
+            <li><a href="Ranking.html">Ranking</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contacts</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <h1>Volleyball List & Team Organizer</h1>
+
+        <div class="list-container">
+            <div class="input-box">
+                <h2>Enter Your Details</h2>
+                <label for="player-name">Enter Your Name:</label>
+                <input type="text" id="player-name" placeholder="Enter Your Name">
+                
+                <label for="player-role">Select Your Role:</label>
+                <select id="player-role">
+                    <option value="Setter">Setter</option>
+                    <option value="Pick 1">Pick 1</option>
+                    <option value="Pick 2">Pick 2</option>
+                    <option value="Pick 3">Pick 3</option>
+                    <option value="Pick 4">Pick 4</option>
+                    <option value="Pick 5">Pick 5</option>
+                </select>
+                
+                <button id="add-player-btn">Register & Pay</button>
+            </div>
+
+            <div class="list-box">
+                <h2>Categorized List of Players</h2>
+                <div id="categorized-list">
+                    <div id="Setter-list">
+                        <h3>Setter</h3>
+                        <ul></ul>
+                    </div>
+                    <div id="Pick1-list">
+                        <h3>Pick 1</h3>
+                        <ul></ul>
+                    </div>
+                    <div id="Pick2-list">
+                        <h3>Pick 2</h3>
+                        <ul></ul>
+                    </div>
+                    <div id="Pick3-list">
+                        <h3>Pick 3</h3>
+                        <ul></ul>
+                    </div>
+                    <div id="Pick4-list">
+                        <h3>Pick 4</h3>
+                        <ul></ul>
+                    </div>
+                    <div id="Pick5-list">
+                        <h3>Pick 5</h3>
+                        <ul></ul>
+                    </div>
+                    <button id="shuffle-teams-btn">Shuffle Teams</button>
+                    <button id="cancel-registration-btn">Cancel Registration</button>
+                    <p id="cancel-warning" style="color: red; display: none;">Payment is non-refundable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qr-display">
+        <h3>Payment QR Code:</h3>
+        <img id="qr-image" alt="QR Code will appear here">
+    </div>
+    
+
+    <script src="List.js"></script>
+</body>
+</html>
